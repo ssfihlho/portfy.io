@@ -1,0 +1,177 @@
+/* =================================================================
+   CSS EXCLUSIVO DO PORTFOLIO.PHP
+================================================================== */
+.portfolio-page {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-brand {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.5rem;
+    color: inherit;
+    letter-spacing: -0.5px;
+}
+
+.accent-dot {
+    color: var(--cor-destaque, #00b8c8);
+}
+
+.portfolio-nav a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.portfolio-nav a:hover {
+    opacity: 1;
+    color: var(--cor-destaque, #00b8c8);
+}
+
+/* Foto de Perfil */
+.portfolio-avatar-box {
+    width: 240px;
+    height: 260px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Textos do Cabeçalho */
+.portfolio-name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.portfolio-role {
+    font-size: 1.15rem;
+    color: var(--cor-destaque, #00b8c8);
+}
+
+.portfolio-bio {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    max-width: 520px;
+    opacity: 0.85;
+}
+
+/* Botões do Portfólio */
+.btn-portfolio-outline {
+    border: 1.5px solid currentColor;
+    color: inherit;
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.btn-portfolio-outline:hover {
+    background-color: var(--cor-destaque, #00b8c8);
+    border-color: var(--cor-destaque, #00b8c8);
+    color: #ffffff;
+}
+
+.btn-portfolio-accent {
+    background-color: var(--cor-destaque, #00b8c8);
+    border: 1.5px solid var(--cor-destaque, #00b8c8);
+    color: #ffffff;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-portfolio-accent:hover {
+    opacity: 0.9;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.badge-accent {
+    background-color: var(--cor-destaque, #00b8c8);
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.45em 0.85em;
+}
+
+.accent-link {
+    color: var(--cor-destaque, #00b8c8);
+}
+
+/* Cards de Projetos */
+.portfolio-work-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.work-img-lg {
+    height: 100%;
+    min-height: 310px;
+    overflow: hidden;
+}
+
+.work-img-md {
+    height: 220px;
+    overflow: hidden;
+}
+
+.work-img-lg img,
+.work-img-md img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEMA 1: CLÁSSICO MINIMALISTA */
+body.tema-minimal {
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+body.tema-minimal .portfolio-work-card {
+    background-color: #f8fafc;
+    border-color: #e2e8f0 !important;
+}
+
+/* TEMA 2: DARK DEVELOPER */
+body.tema-dark {
+    background-color: #0b0f19;
+    color: #f1f5f9;
+}
+
+body.tema-dark .portfolio-work-card {
+    background-color: #131a2a;
+    border-color: #1e293b !important;
+}
+
+body.tema-dark .border-top {
+    border-color: #1e293b !important;
+}
+
+body.tema-dark .bg-secondary-subtle {
+    background-color: #1e293b !important;
+}
+
+/* TEMA 3: CRIATIVO EDITORIAL */
+body.tema-criativo {
+    background-color: #f5f2eb;
+    color: #1c1917;
+}
+
+body.tema-criativo .portfolio-name {
+    font-family: 'Playfair Display', serif;
+}
+
+body.tema-criativo .portfolio-work-card {
+    background-color: #ffffff;
+    border-color: #e7e5e4 !important;
+}
